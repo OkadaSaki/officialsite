@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Raleway:700,400">
+  <title>お問い合わせページ</title>
+  <link rel="stylesheet" href="css/reset.css" type="text/css">
+  <link rel="stylesheet" href="css/style-l.css" media="screen and (min-width:769px)">
+  <link rel="stylesheet" href="css/style-s.css" media="screen and (max-width:768px)">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="js/script.js"></script>
+</head>
+
+<body>
+  <div class="profile">
+    <h1>テスト</h1>
+    <p>問い合わせのページ
+    </p>
+  </div>
+
+  <form action="">
+    <div class="form-group">
+      <label for="youeName" class="form-label">お名前</label>
+      <div>
+        <input type="text" name="お名前" id="yourName">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="yourEmail" class="form-label">E-mail</label>
+      <div>
+        <input type="email" name="E-mail" id="yourEmail">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="yourInquiry" class="form-label">お問い合わせ内容</label>
+      <div>
+        <textarea name="お問い合わせ内容" id="yourInquiry" cols="30" rows="10" placeholder="ここに記入して下さい"></textarea>
+      </div>
+    </div>
+
+    <div class="form-btn">
+      <button type="submit"><img src="officialsite/images/letter.png" value="送信する" alt="送信する"></button>
+    </div>
+  </form>
+</body>
