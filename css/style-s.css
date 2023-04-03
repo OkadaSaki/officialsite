@@ -14,7 +14,7 @@ image {
 
 /*header*/
 header {
-  background-color: #9bf2b5;
+  background-color: dimgray;
   display: flex;
   justify-content: space-between;
   padding: 10px 50px;
@@ -38,14 +38,14 @@ h2 {
 /*footer*/
 
 body footer {
-  background-color: #9bf2b5;
+  background-color: dimgray;
   color: #fff;
   padding: 30px 50px 10px 50px;
   /*position: fixed;
   z-index: 100;*/
 }
 
-ハンバーガーメニュー部分
+/* ハンバーガーメニュー部分 */
 
 /*.nav-toggle {
   display: none;
@@ -92,22 +92,26 @@ body footer {
   display: block;
 }*/
 .g-navi {
+  display: block;
   transform: translateY(-100%);
   transition: .5s ease-in-out;
-  display: block;
   position: fixed;
   z-index: 2;
   padding-top: 60px;
   height: 100vh;
 }
 
+
 .g-navi ul {
   display: block;
+  height: 100vh;
 }
 
 .g-navi.active {
   transform: translateY(0%);
   transition: .5s ease-in-out;
+  background-color: darkgray;
+  padding: initial;
 }
 
 .g-navi-sp {
@@ -120,6 +124,13 @@ body footer {
   height: 60px;
   padding: 4%;
   z-index: 3;
+}
+
+.nav-list {
+  height: 60px;
+  padding-bottom: 60px;
+  padding-right: 60px;
+  margin-top: 30px;
 }
 
 /* ロゴエリア */
