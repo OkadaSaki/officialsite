@@ -13,6 +13,14 @@ image {
   margin: 50%;
 }
 
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
 /*header*/
 header {
   background-color: dimgray;
@@ -26,6 +34,7 @@ header {
 
 h1 {
   color: #fff;
+  font-size: 0.8rem;
 }
 
 body header img {
@@ -35,6 +44,7 @@ body header img {
 
 h2 {
   color: #fff;
+  font-size: 1.1rem;
 }
 
 /*footer*/
