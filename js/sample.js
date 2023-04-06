@@ -21,3 +21,19 @@ $(function () {
     $('.g-navi').removeClass('active'); //(.g-navi)にある(.active)も削除
   });
 });
+
+$(function () {
+  $('.modalopen').each(function () {
+    $(this).on('click', function () {
+      var target = $(this).data('target');
+      var modal = document.getElementById(target);
+      console.log(modal);
+      $(modal).fadeIn();
+      return false;
+    });
+  });
+  $('.modalClose,.modal-main').on('click', function () {
+    $('.js-modal').fadeOut();
+    return false;
+  });
+});

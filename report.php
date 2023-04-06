@@ -9,8 +9,8 @@
   <link rel="stylesheet" href="css/style-l.css" media="screen and (min-width:769px)">
   <link rel="stylesheet" href="css/style-s.css" media="screen and (max-width:768px)">
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-  <script src="js/script.js"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="./js/sample.js"></script>
 </head>
 
 
@@ -64,7 +64,7 @@
         // 画像表示
         echo '<img src="' , $v , '" alt="" loading="lazy" class="food">';
         // ファイル名表示
-        echo '<label>' , basename($v) , '</label>';
+        // echo '<label>' , basename($v) , '</label>';
     }
   ?>
 </body>

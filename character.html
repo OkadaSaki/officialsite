@@ -9,59 +9,83 @@
   <link rel="stylesheet" href="css/style-l.css" media="screen and (min-width:769px)">
   <link rel="stylesheet" href="css/style-s.css" media="screen and (max-width:768px)">
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-  <script src="js/script.js"></script>
+  <script src="./js/sample.js"></script>
 </head>
 
 <body>
-  <div class="character">
-    <!-- モーダル機能で実装する -->
-    <h1>キャラクター紹介</h1>
+  <p class="character-intro">キャラクター紹介</p>
+  <div class="character-wrapper">
+    <!-- モーダル機能で実装する-->
     <div class="character-author">
-      <h2>さくしゃ</h2>
-      <img src="officialsite/images" alt="さくしゃ">
-      <!-- ここからモーダル機能で実装する -->
-      <img src="officialsite/images" alt="モーダル用さくしゃ">
-      <p class="explanation-text">同期ペンギンのさくしゃ。<br>頭のサイズが描き方安定しないおかげでサイズがよく変わる。<br>
-      毎年誕プレで同期ペンギンのLINEスタンプを作っているのだけれど毎年遅刻している。<br>
-      最近はペンギンも好きになってきたけど、本体は圧倒的猫派の猫信者。<br>
-      職場でもただの猫狂いとして認知されている。<br>
-      当時日記を描いていて、晴れの日が多く、太陽がいっぱい描かれていたので、ネットの活動名は太陽になった。<br>
-      その際太陽に描いていた顔が今のさくしゃの顔にそのままなったよ。<br>
-      過去にさくしゃのスタンプ作った時にクリーム色のボディが裸認定されて全部リジェクトされた過去がある（実話）。<br>
-      最近はリジェクトにならないように備考欄で裸じゃないです！！ってアピールしてる（わろ）</p>
+      <a href="" class="modalopen" data-target="modal01">
+        <img class="character-img" src="officialsite/images" alt="modalicon">
+        <p>さくしゃ</p>
+      </a>
     </div>
-    <div class="character-author">
-      <h2>同期ペンギン</h2>
-      <img src="officialsite/images" alt="同期ペンギン">
-      <!-- ここからモーダル機能で実装する -->
-      <img src="officialsite/images" alt="モーダル用同期ペンギン">
-      <p class="explanation-text">名の通りさくしゃの同期がモデルのペンギン。<br>愛称はペン。<br>
-      大のペンギン狂いでペンギンになりたいって言い出したのをマンガにしたのが始まり。<br>
-      日に日に描き方は安定してくるけど、顔のパーツのおかげで腹立つ顔になりがちなのはご愛嬌ということで。<br>
-      始めはちゃんとペンギンっぽかった←<br>
-      シリーズ追うごとにモチモチぽってりな魅惑のお餅ボディになりつつある。<br>
-      好物は焼き鳥。やけ食いするときのイラストでは大体焼き鳥食べてる。<br>
-      LINEスタンプではその煽り精神を遺憾なく発揮しているが、発案はほぼほぼ本人からの提供（実話）。<br>
-      シリーズ４のあなたの推しが出た時用のスタンプに勝る煽りスタンプはまだ出来ていない。
-      </p>
+    <div class="modal-main js-modal" id="modal01">
+      <div class="modal-inner">
+        <div class="inner-content">
+          <p class="inner-title">さくしゃ</p>
+          <img src="officialsite/images" alt="imageface" class="image-modal">
+          <p class="inner-text">同期ペンギンのさくしゃ。<br>頭のサイズが描き方安定しないおかげでサイズがよく変わる。<br>
+          毎年誕プレで同期ペンギンのLINEスタンプを作っているのだけれど毎年遅刻している。<br>
+          最近はペンギンも好きになってきたけど、本体は圧倒的猫派の猫信者。<br>
+          職場でもただの猫狂いとして認知されている。<br>
+          当時日記を描いていて、晴れの日が多く、太陽がいっぱい描かれていたので、ネットの活動名は太陽になった。<br>
+          その際太陽に描いていた顔が今のさくしゃの顔にそのままなったよ。<br>
+          過去にさくしゃのスタンプ作った時にクリーム色のボディが裸認定されて全部リジェクトされた過去がある（実話）。<br>
+          最近はリジェクトにならないように備考欄で裸じゃないです！！ってアピールしてる（わろ）</p>
+          <a class="send-button modalClose">Close</a>
+        </div>
+      </div>
     </div>
-    <div class="character-author">
-      <h2>もんぬ</h2>
-      <img src="officialsite/images" alt="もんぬ">
-      <!-- ここからモーダル機能で実装する -->
-      <img src="officialsite/images" alt="モーダル用もんぬ">
-      <p class="explanation-text">さくしゃのリアルな先輩。<br>リアルの愛称を少しお借りしてもんぬに。<br>
-      実はアフタヌーンティー一緒に行くまでほぼほぼ連絡とらず、一緒にお出かけするようになったのは割とここ数年の出来事。<br>
-      さくしゃと同じく猫様大好きで家にもいる為モチーフは勿論猫ちゃん。<br>
-      ポイントはまつ毛。<br>
-      最近アフタヌーンティー行くおかげで紅茶ハイとかも飲むようになったらしい、嬉しい。<br>
-      正直に言うともんぬが一番キャラクターとして描きやすいというのはここだけの秘密。<br>
-      猫ちゃんだからね、仕方ないね。<br>
-      シリーズのスタンプが終わったらLINEスタンプデビューする予定。
-      </p>
+    <div class="character-penguin">
+      <a href="" class="modalopen" data-target="modal02">
+        <img class="character-img" src="officialsite/images" alt="modalicon">
+        <p>同期ペンギン</p>
+      </a>
     </div>
-  </div>
-  <p>もしかしたら他にも増えるかもしれない…？</p>
+    <div class="modal-main js-modal" id="modal02">
+      <div class="modal-inner">
+        <div class="inner-content">
+          <p class="inner-title">同期ペンギン</p>
+          <img src="officialsite/images" alt="imageface" class="image-modal">
+          <p class="inner-text">名の通りさくしゃの同期がモデルのペンギン。<br>愛称はペン。<br>
+          大のペンギン狂いでペンギンになりたいって言い出したのをマンガにしたのが始まり。<br>
+          日に日に描き方は安定してくるけど、顔のパーツのおかげで腹立つ顔になりがちなのはご愛嬌ということで。<br>
+          始めはちゃんとペンギンっぽかった←<br>
+          シリーズ追うごとにモチモチぽってりな魅惑のお餅ボディになりつつある。<br>
+          好物は焼き鳥。やけ食いするときのイラストでは大体焼き鳥食べてる。<br>
+          LINEスタンプではその煽り精神を遺憾なく発揮しているが、発案はほぼほぼ本人からの提供（実話）。<br>
+          シリーズ４のあなたの推しが出た時用のスタンプに勝る煽りスタンプはまだ出来ていない。</p>
+          <a class="send-button modalClose">Close</a>
+        </div>
+      </div>
+    </div>
+    <div class="character-monnu">
+      <a href="" class="modalopen" data-target="modal03">
+        <img class="character-img" src="officialsite/images" alt="modalicon">
+        <p>もんぬ</p>
+      </a>
+    </div>
+    <div class="modal-main js-modal" id="modal03">
+      <div class="modal-inner">
+        <div class="inner-content">
+          <p class="inner-title">もんぬ</p>
+          <img src="officialsite/images" alt="imageface" class="image-modal">
+          <p class="inner-text">さくしゃのリアルな先輩。<br>リアルの愛称を少しお借りしてもんぬに。<br>
+    	      実はアフタヌーンティー一緒に行くまでほぼほぼ連絡とらず、一緒にお出かけするようになったのは割とここ数年の出来事。<br>
+    	      さくしゃと同じく猫様大好きで家にもいる為モチーフは勿論猫ちゃん。<br>
+    	      ポイントはまつ毛。<br>
+    	      最近アフタヌーンティー行くおかげで紅茶ハイとかも飲むようになったらしい、嬉しい。<br>
+    	      正直に言うともんぬが一番キャラクターとして描きやすいというのはここだけの秘密。<br>
+    	      猫ちゃんだからね、仕方ないね。<br>
+    	      シリーズのスタンプが終わったらLINEスタンプデビューする予定。</p>
+          <a class="send-button modalClose">Close</a>
+        </div>
+      </div>
+    </div>
+    <p>もしかしたら他にも増えるかもしれない…？</p>
 </body>
 
 <footer>
