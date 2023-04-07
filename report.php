@@ -57,6 +57,7 @@
     foreach($tmp as $v) {
         if(basename(dirname($v)) !== $shopName){
             // 店舗名表示
+            //sort($v, SORT_NATURAL);
             echo '<H3>' , basename(dirname($v)) , '</H3>';
             $shopName = basename(dirname($v));
         }
