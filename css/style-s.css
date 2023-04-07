@@ -33,6 +33,12 @@ h1 {
 
 h2 {
   color: #fff;
+  font-size: 1.4rem;
+}
+
+h3 {
+  color: #fff;
+  font-size: 1.1rem;
 }
 
 /*footer*/
@@ -198,4 +204,10 @@ body footer {
 .food {
   width: 80%;
   padding: 20px 5px 10px 10px;
+}
+
+/* イラストオンリーCSS */
+.characteronly {
+  width: 70%;
+  padding: 50px 10px 10px 10px;
 }

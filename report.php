@@ -13,10 +13,9 @@
   <script src="./js/sample.js"></script>
 </head>
 
-
 <body>
-  <h1>食レポシリーズ表示確認</h1>
-
+  <h2>食レポシリーズ</h2>
+  <p class="introduction">ここはさくしゃがこれまでに撮った写真にイラストを描いた食レポシリーズ置き場です。<br>更新は結構早い方</p>
   <?php
     // 多階層からなるディレクトリ内のファイル一覧を取得する関数
     function scandir_r($dir){
@@ -67,5 +66,19 @@
         // echo '<label>' , basename($v) , '</label>';
     }
   ?>
+  <!-- ページネーション入れる -->
 </body>
+
+<footer>
+  <div class="footer-wrapper">
+    <!-- ロゴ -->
+    <div class="logo">
+      <a href="index.html"><img src="officialsite/images/footer/" alt="ロゴ"></a>
+    </div>
+    <!-- コピーライト -->
+    <div class="copyright">
+      <small>Copyright &copy; Taiyou/LINE</small>
+    </div>
+</footer>
+
 </html>

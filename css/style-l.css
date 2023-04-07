@@ -50,6 +50,12 @@ body header img {
 
 h2 {
   color: #fff;
+  font-size: 1.4rem;
+}
+
+/*ギャラリーのタイトル*/
+h3 {
+  color: #fff;
   font-size: 1.1rem;
 }
 
@@ -137,5 +143,11 @@ body footer {
 /* 食レポ写真CSS */
 .food {
   width: 80%;
+  padding: 50px 10px 10px 10px;
+}
+
+/* イラストオンリーCSS */
+.characteronly {
+  width: 70%;
   padding: 50px 10px 10px 10px;
 }
