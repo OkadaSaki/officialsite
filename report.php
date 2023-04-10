@@ -11,6 +11,8 @@
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="./js/sample.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script type="text/javascript" src="./js/paginathing.min.js"></script>
 </head>
 
 <body>
@@ -65,8 +67,53 @@
         echo '<img src="' , $v , '" alt="" loading="lazy" class="food">';
         // ファイル名表示
         // echo '<label>' , basename($v) , '</label>';
+    };
+
+define('MAX','3');
+$tmp = array(
+      array('tmp_kind' => '$tmp', 'shop_name' => '$shopName'),
+      );
+$tmp_num = count($tmp);
+$max_page = ceil($tmp_num / MAX);
+
+if(!isset($_GET['page_id'])){
+    $now = 1;
+}else{
+    $now = $_GET['page_id'];
+}
+
+$start_no = ($now - 1) * MAX;
+
+$disp_data = array_slice($tmp, $start_no, MAX, true);
+
+foreach($disp_data as $val){
+    echo $val['tmp_kind']. '　'.$val['shop_name']. '<br />';
+}
+
+echo '全件数'. $tmp_num. '件'. '　'; // 全データ数の表示です。
+
+if($now > 1){ // リンクをつけるかの判定
+    echo "<a href='/report.php?page_id='.($now - 1).'')>前へ</a>". '　';
+} else {
+    echo '前へ'. '　';
+}
+
+for($i = 1; $i <= $max_page; $i++){
+    if ($i == $now) {
+        echo $now. '　';
+    } else {
+        echo "<a href='/report.php?page_id='. $i. '')>'. $i. '</a>". '　';
     }
-  ?>
+}
+
+if($now < $max_page){ // リンクをつけるかの判定
+    echo "<a href='/paging.php?page_id='.($now + 1).'')>次へ</a>". '　';
+} else {
+    echo '次へ';
+}
+?>
+
+
   <!-- ページネーション入れる -->
 </body>
 
