@@ -49,14 +49,25 @@
         }
         return $results;
     }
-
+    define('MAX','6');
     // 関数を実行してファイル一覧取得
     // ここで指定するパスは実行するphpファイルからみたパス
     $tmp = scandir_r("./images/report");
     // 画像一覧の表示
     // 店舗名は1度のみ表示するようにチェック処理を入れている
     $shopName = "";
-    foreach($tmp as $v) {
+    $tmp_num = count($tmp);
+    $max_page = ceil($tmp_num / MAX);
+
+    if(!isset($_GET['page_id'])){
+      $now = 1;
+    }else{
+        $now = $_GET['page_id'];
+    }
+
+    $start_no = ($now - 1) * MAX;
+    $disp_data = array_slice($tmp, $start_no, MAX, true);
+    foreach($disp_data as $v) {
         if(basename(dirname($v)) !== $shopName){
             // 店舗名表示
             //sort($v, SORT_NATURAL);
@@ -69,6 +80,29 @@
         // echo '<label>' , basename($v) , '</label>';
     };
 
+    echo '全件数'. $tmp_num. '件'. '　'; // 全データ数の表示です。
+
+    if($now > 1){ // リンクをつけるかの判定
+        //echo "<a href='paging.php?page_id='.($now - 1).'')>前へ</a>". '　';
+        echo '<a href="report.php?page_id='.($now - 1).'")>次へ</a>'. '　';
+    } else {
+        echo '前へ'. '　';
+    }
+
+    for($i = 1; $i <= $max_page; $i++){
+        if ($i == $now) {
+            echo $now. '　';
+        } else {
+            echo '<a href="report.php?page_id='. $i. '")>'. $i. '</a>　';
+        }
+    }
+
+    if($now < $max_page){ // リンクをつけるかの判定
+        //echo "<a href='paging.php?page_id='.($now + 1).'')>次へ</a>". '　';
+        echo '<a href="report.php?page_id='.($now + 1).'")>次へ</a>'. '　';
+    } else {
+        echo '次へ';
+    }
 ?>
 
 
