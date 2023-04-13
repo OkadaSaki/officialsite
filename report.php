@@ -119,7 +119,7 @@ if($now < $max_page){ // リンクをつけるかの判定
   <div class="footer-wrapper">
     <!-- ロゴ -->
     <div class="logo">
-      <img src="./images/footer/rogo1.png" alt="ロゴ">
+        <a href="index.html"><img src="./images/footer/rogo1.png" alt="ロゴ"></a>
       <img src="./images/footer/rogo2.png" alt="簡易ロゴ">
     </div>
     <!-- コピーライト -->
