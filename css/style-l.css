@@ -160,3 +160,11 @@ body footer {
   width: 80%;
   padding: 20px 5px 10px 10px;
 }
+
+
+.background {
+  height: 600px;
+  background-image: url(../images/top/back-image.png);
+  background-position: center;
+  background-repeat: repeat;
+}
