@@ -1,10 +1,10 @@
 @charset "UTF-8";
 
 body {
-  background-color: #c6f0ff;
-  /* background-image: url(../images/top/back-image.png);
-      background-position: center;
-      background-repeat: repeat;*/
+  /*background-color: #c6f0ff;*/
+  background-image: url(../images/top/back-image.png);
+  background-position: center;
+  background-repeat: repeat;
   font-family: "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-size: 1rem;
   padding: 6px 0 0;
@@ -116,7 +116,6 @@ body footer {
 
 .modal-inner img {
   /* ④ モーダル画像の幅は親要素（.modal-inner）の100%に設定。 */
-  width: 100%;
   margin: 0 auto;
   margin-bottom: 10px;
 }
