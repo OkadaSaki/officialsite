@@ -5,6 +5,7 @@ body {
   background-image: url(../images/top/back-image.png);
   background-position: center;
   background-repeat: repeat;
+  background-size: contain;
   font-family: "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-size: 1rem;
   padding: 6px 0 0;
@@ -23,61 +24,145 @@ p {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   font-size: 1rem;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #252724;
 }
 
 .logo-title {
   color: #fff;
   font-size: 1.2rem;
+  text-align: end;
 }
 
 /*header*/
 header {
-  background-color: dimgray;
+  background-color: #3A3D2B;
   display: flex;
-  justify-content: space-between;
-  padding: 10px 20px 0px 250px;
-  /*position: fixed;
-  z-index: 100;*/
+  justify-content: space-around;
+  padding: 0px 0px 0px 25px;
   text-align: end;
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
 }
 
+
+ul {
+  list-style-type: none;
+}
+
+/*トップ画のCSS*/
 h1 {
   color: #fff;
   font-size: 1.7rem;
 }
 
+.nav-list a {
+  color: #FFF9EE;
+  font-size: 1.2rem;
+}
+
+.nav-item {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
 body header img {
-  width: 32px;
-  height: 32px;
+  width: 45px;
+  height: 45px;
+  margin-top: 3px;
+  margin-bottom: 13px;
+  /*スマホ用*/
+  /*  width: 32px;
+  height: 32px;*/
+}
+
+.activities-title {
+  background: rgba(255, 247, 234, 0.44);
+  padding: 23px;
+  margin: 30px 0px 30px 0px;
+}
+
+.illustration-title {
+  background: rgba(234, 255, 234, 0.44);
+  padding: 23px;
+  margin: 30px 0px 30px 0px;
+}
+
+.store-title {
+  background: rgba(255, 247, 234, 0.44);
+  padding: 23px;
+  margin: 30px 0px 30px 0px;
+}
+
+.top img {
+  width: 480px;
+  margin: auto;
+  margin-top: 180px;
+  display: block;
 }
 
 h2 {
-  color: #fff;
+  color: #3A3D2B;
   font-size: 1.4rem;
+  text-align: center;
 }
 
 /*ギャラリーのタイトル*/
 h3 {
-  color: #fff;
+  color: #3A3D2B;
   font-size: 1.1rem;
+  text-align: center;
 }
 
 .character-intro {
-  color: #fff;
+  color: #3A3D2B;
   font-size: 1.2rem;
+}
+
+.gallery_report {
+  background: rgba(234, 255, 234, 0.44);
+  padding: 20px;
+}
+
+.gallery_book {
+  background: rgba(234, 255, 234, 0.44);
+  padding: 20px;
+}
+
+.gallery_star {
+  background: rgba(255, 247, 234, 0.44);
+  padding: 20px;
+}
+
+.gallery_characteronly {
+  background: rgba(255, 247, 234, 0.44);
+  padding: 20px;
+}
+
+.gallery_text01 {
+  line-height: 27px;
+}
+
+.gallery_text02 {
+  line-height: 27px;
 }
 
 /*footer*/
 
 footer {
-  background-color: dimgray;
-  ;
+  background-color: #3A3D2B;
+  text-align: center;
   color: #fff;
   padding: 30px 50px 10px 50px;
 }
 
 body footer {
-  background-color: dimgray;
+  background-color: #3A3D2B;
   color: #fff;
   padding: 30px 50px 10px 50px;
   /*position: fixed;
@@ -98,7 +183,7 @@ body footer {
   align-items: center;
   width: 100%;
   height: 100%;
-  background-color: #ffffff;
+  background-color: #FCFEEF;
   color: #666666;
   position: fixed;
   top: 0;
@@ -135,6 +220,8 @@ body footer {
   text-align: center;
   margin: 0 auto;
   margin-bottom: 20px;
+  line-height: 22px;
+  ;
 }
 
 .modalClose {
@@ -142,10 +229,73 @@ body footer {
   cursor: pointer;
 }
 
+.space {
+  margin-bottom: 40px;
+  padding: 20px;
+}
+
+.character-author {
+  text-align: center;
+}
+
+.character-penguin {
+  text-align: center;
+}
+
+.character-monnu {
+  text-align: center;
+}
+
 /* 食レポ写真CSS */
 .food {
   width: 80%;
-  padding: 50px 10px 10px 10px;
+  margin: auto;
+  margin-bottom: 25px;
+  margin-left: 6%;
+  padding: 5px 10px 10px 55px;
+}
+
+.pgnum {
+  font-size: 1.1rem;
+  display: inline-block;
+  color: #fff;
+  background-color: #515F4D;
+  text-decoration: none;
+  text-align: center;
+  line-height: 44px;
+  width: 44px;
+  height: 44px;
+  margin: 0 6px 20px;
+  transition: .2s ease-in-out;
+  white-space: nowrap;
+  -webkit-border-radius: 50%;
+  border-radius: 35%
+}
+
+.pgtext {
+  font-size: 1.3rem;
+  color: #666;
+  transition: .2s ease-in-out;
+  line-height: 44px;
+  width: 40px;
+  height: 40px;
+  margin: 0 6px;
+  white-space: nowrap;
+  -webkit-border-radius: 50%;
+  border-radius: 35%;
+}
+
+
+a:hover {
+  background: #6A8F68;
+  border-radius: 35%;
+  /*transform: rotate(360deg);*/
+}
+
+.total {
+  font-size: 1rem;
+  text-align: center;
+  display: flex;
 }
 
 /* イラストオンリーCSS */
@@ -161,9 +311,34 @@ body footer {
 }
 
 
-.background {
+/*.background {
   height: 600px;
   background-image: url(../images/top/back-image.png);
   background-position: center;
   background-repeat: repeat;
+}*/
+/* はじめにCSS */
+.announce-text {
+  text-align: center;
+  line-height: 27px;
+}
+
+.bowing {
+  width: 406px;
+  height: 288px;
+}
+
+/* プロフィールCSS */
+.whole {
+  text-align: center;
+}
+
+.profile-text {
+  margin: 1em 0px;
+  line-height: 27px;
+}
+
+/* 画像保存CSS */
+.attention {
+  line-height: 27px;
 }

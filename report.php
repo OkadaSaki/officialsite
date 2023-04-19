@@ -80,26 +80,26 @@
         // echo '<label>' , basename($v) , '</label>';
     };
 
-    echo '全件数'. $tmp_num. '件'. '　'; // 全データ数の表示です。
+    echo '<p class="total">全件数</p>' .$tmp_num. '<p class="total">件</p>'; // 全データ数の表示です。
 
     if($now > 1){ // リンクをつけるかの判定
         //echo "<a href='paging.php?page_id='.($now - 1).'')>前へ</a>". '　';
-        echo '<a href="report.php?page_id='.($now - 1).'")>次へ</a>'. '　';
+        echo '<a href="report.php?page_id='.($now - 1).'") class="pgtext">前へ</a>';
     } else {
-        echo '前へ'. '　';
+        echo '前へ';
     }
 
     for($i = 1; $i <= $max_page; $i++){
         if ($i == $now) {
-            echo $now. '　';
+            echo $now;
         } else {
-            echo '<a href="report.php?page_id='. $i. '")>'. $i. '</a>　';
+            echo '<a href="report.php?page_id='. $i. '") class="pgnum">'. $i. '</a>';
         }
     }
 
     if($now < $max_page){ // リンクをつけるかの判定
         //echo "<a href='paging.php?page_id='.($now + 1).'')>次へ</a>". '　';
-        echo '<a href="report.php?page_id='.($now + 1).'")>次へ</a>'. '　';
+        echo '<a href="report.php?page_id='.($now + 1).'") class="pgtext">次へ</a>';
     } else {
         echo '次へ';
     }
