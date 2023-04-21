@@ -1,61 +1,5 @@
 @charset "UTF-8";
 
-body {
-  /*background-color: #c6f0ff;*/
-  background-image: url(../images/top/back-image.png);
-  background-position: center;
-  background-repeat: repeat;
-  font-family: "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
-  font-size: 1rem;
-  padding: 6px 0 0;
-  overflow-x: hidden;
-}
-
-image {
-  width: 50%;
-  height: 50%;
-  margin: 50%;
-}
-
-/*header*/
-header {
-  background-color: dimgray;
-  display: flex;
-  justify-content: space-between;
-  padding: 10px 50px;
-  /*  position: fixed;
-  z-index: 100;*/
-}
-
-body header img {
-  width: 40px;
-  height: 40px;
-}
-
-h1 {
-  color: #fff;
-}
-
-h2 {
-  color: #fff;
-  font-size: 1.4rem;
-}
-
-h3 {
-  color: #fff;
-  font-size: 1.1rem;
-}
-
-/*footer*/
-
-body footer {
-  background-color: dimgray;
-  color: #fff;
-  padding: 30px 50px 10px 50px;
-  /*position: fixed;
-  z-index: 100;*/
-}
-
 .g-navi {
   display: block;
   transform: translateY(-100%);
@@ -75,7 +19,8 @@ body footer {
 .g-navi.active {
   transform: translateY(0%);
   transition: .5s ease-in-out;
-  background-color: darkgray;
+  background-color: #719F92;
+  ;
   padding: initial;
 }
 
@@ -103,6 +48,114 @@ body footer {
   font-size: 1.5rem;
   color: #fff;
   letter-spacing: 3px;
+}
+
+
+/*ここから書き直す*/
+body {
+  /*background-color: #c6f0ff;*/
+  background-image: url(../images/top/back-image.png);
+  background-position: center;
+  background-repeat: repeat;
+  background-size: contain;
+  font-family: "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
+  font-size: 1rem;
+  padding: 6px 0 0;
+}
+
+image {
+  width: 50%;
+  height: 50%;
+  margin: 50%;
+}
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #252724;
+}
+
+.logo-title {
+  color: #fff;
+  font-size: 1.2rem;
+  text-align: end;
+}
+
+/*header*/
+header {
+  background-color: #3A3D2B;
+  display: flex;
+  justify-content: space-around;
+  padding: 0px 0px 0px 25px;
+  text-align: end;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+ul {
+  list-style-type: none;
+}
+
+/*トップ画のCSS*/
+h1 {
+  color: #fff;
+  font-size: 1.7rem;
+  padding: 42px 0px 0px 0px;
+}
+
+.nav-list a {
+  color: #FFF9EE;
+  font-size: 1.2rem;
+}
+
+.nav-item {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+body header img {
+  width: 32px;
+  height: 32px;
+  margin-top: 3px;
+}
+
+.activities-title {
+  background: rgba(255, 247, 234, 0.44);
+  padding: 23px;
+  margin: 30px 0px 30px 0px;
+}
+
+.illustration-title {
+  background: rgba(234, 255, 234, 0.44);
+  padding: 23px;
+  margin: 30px 0px 30px 0px;
+}
+
+.store-title {
+  background: rgba(255, 247, 234, 0.44);
+  padding: 23px;
+  margin: 30px 0px 30px 0px;
+}
+
+.top img {
+  margin: auto;
+  display: block;
+}
+
+h2 {
+  color: #3A3D2B;
+  font-size: 1.4rem;
+  text-align: center;
 }
 
 /* ハンバーガーメニュー */
@@ -146,7 +199,64 @@ body footer {
   transform: rotate(45deg);
 }
 
-/* modalウィンドウ */
+/*ギャラリーのタイトル*/
+h3 {
+  color: #3A3D2B;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.character-intro {
+  color: #3A3D2B;
+  font-size: 1.2rem;
+}
+
+.gallery_report {
+  background: rgba(234, 255, 234, 0.44);
+  padding: 20px;
+}
+
+.gallery_book {
+  background: rgba(234, 255, 234, 0.44);
+  padding: 20px;
+}
+
+.gallery_star {
+  background: rgba(255, 247, 234, 0.44);
+  padding: 20px;
+}
+
+.gallery_characteronly {
+  background: rgba(255, 247, 234, 0.44);
+  padding: 20px;
+}
+
+.gallery_text01 {
+  line-height: 27px;
+}
+
+.gallery_text02 {
+  line-height: 27px;
+}
+
+/*footer*/
+
+footer {
+  background-color: #3A3D2B;
+  text-align: center;
+  color: #fff;
+  padding: 30px 50px 10px 50px;
+}
+
+body footer {
+  background-color: #3A3D2B;
+  color: #fff;
+  padding: 30px 50px 10px 50px;
+  /*position: fixed;
+  z-index: 100;*/
+}
+
+/* ① モーダルウィンドウ*/
 .modal-main {
   /* ① モーダルウィンドウを非表示にする。*/
   display: none;
@@ -160,7 +270,7 @@ body footer {
   align-items: center;
   width: 100%;
   height: 100%;
-  background-color: #ffffff;
+  background-color: #FCFEEF;
   color: #666666;
   position: fixed;
   top: 0;
@@ -178,7 +288,6 @@ body footer {
 
 .modal-inner img {
   /* ④ モーダル画像の幅は親要素（.modal-inner）の100%に設定。 */
-  /* width: 100%;*/
   margin: 0 auto;
   margin-bottom: 10px;
 }
@@ -194,10 +303,11 @@ body footer {
 .inner-text {
   /* ⑥紹介文の文字サイズの設定・表示領域は70%で設定し、他要素との間隔調整。 */
   font-size: 1rem;
-  width: 70%;
+  width: 88%;
   text-align: center;
   margin: 0 auto;
   margin-bottom: 20px;
+  line-height: 22px;
 }
 
 .modalClose {
@@ -205,16 +315,97 @@ body footer {
   cursor: pointer;
 }
 
+.space {
+  margin-bottom: 40px;
+  padding: 20px;
+}
+
+.character-author {
+  text-align: center;
+}
+
+.character-penguin {
+  text-align: center;
+}
+
+.character-monnu {
+  text-align: center;
+}
+
 /* 食レポ写真CSS */
+.food-report {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+.pagenation {
+  text-align: center;
+}
+
 .food {
-  width: 80%;
-  padding: 20px 5px 10px 10px;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+  margin-top: 10px;
+  display: block;
+  padding: 6px;
+}
+
+.page_count {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.total {
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 45px;
+}
+
+.pgnum {
+  font-size: 1.1rem;
+  display: inline-block;
+  color: #fff;
+  background-color: #515F4D;
+  text-decoration: none;
+  text-align: center;
+  line-height: 35px;
+  width: 35px;
+  height: 35px;
+  margin: 0 6px 9px;
+  transition: .2s ease-in-out;
+  white-space: nowrap;
+  -webkit-border-radius: 50%;
+  border-radius: 28%;
+}
+
+.pgtext {
+  font-size: 1.3rem;
+  color: #666;
+  transition: .2s ease-in-out;
+  line-height: 44px;
+  width: 40px;
+  height: 40px;
+  margin: 0 6px;
+  white-space: nowrap;
+  -webkit-border-radius: 50%;
+  border-radius: 35%;
+}
+
+
+a:hover {
+  background: #6A8F68;
+  border-radius: 35%;
+  /*transform: rotate(360deg);*/
 }
 
 /* イラストオンリーCSS */
 .characteronly {
-  width: 70%;
+  width: 100%;
   padding: 50px 10px 10px 10px;
+  text-align: center;
 }
 
 /* トップCSS */
@@ -223,9 +414,36 @@ body footer {
   padding: 20px 5px 10px 10px;
 }
 
-.background {
+
+/*.background {
   height: 600px;
   background-image: url(../images/top/back-image.png);
   background-position: center;
   background-repeat: repeat;
+}*/
+/* はじめにCSS */
+.announce-text {
+  font-size: 0.9rem;
+  padding: 12px;
+  line-height: 23px;
+}
+
+.bowing {
+  width: 406px;
+  height: 288px;
+}
+
+/* プロフィールCSS */
+.whole {
+  text-align: center;
+}
+
+.profile-text {
+  margin: 1em 0px;
+  line-height: 27px;
+}
+
+/* 画像保存CSS */
+.attention {
+  line-height: 27px;
 }

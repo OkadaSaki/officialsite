@@ -34,5 +34,6 @@
     <div class="copyright">
       <small>Copyright &copy; Taiyou/LINE</small>
     </div>
+  </div>
 </footer>
 </html>
