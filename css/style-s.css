@@ -20,8 +20,10 @@
   transform: translateY(0%);
   transition: .5s ease-in-out;
   background-color: #719F92;
-  ;
   padding: initial;
+  text-align: end;
+  line-height: 50px;
+  margin-left: 50px;
 }
 
 .g-navi-sp {
@@ -434,8 +436,16 @@ a:hover {
 }
 
 /* プロフィールCSS */
+.profile {
+  text-align: center;
+}
+
 .whole {
   text-align: center;
+}
+
+.whole-image {
+  height: 380px;
 }
 
 .profile-text {
@@ -446,4 +456,29 @@ a:hover {
 /* 画像保存CSS */
 .attention {
   line-height: 27px;
+}
+
+/* gallery前のイラストCSS */
+.top_image {
+  text-align: center;
+}
+
+.sweets_image {
+  max-width: 100%;
+  height: 360px;
+}
+
+.star_image {
+  max-width: 100%;
+  height: 360px;
+}
+
+.book_image {
+  max-width: 100%;
+  height: 360px;
+}
+
+.only_image {
+  max-width: 100%;
+  height: 360px;
 }
