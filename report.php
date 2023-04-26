@@ -149,14 +149,14 @@
 
 <footer>
     <div class="footer-wrapper">
-    <!-- ロゴ -->
+        <!-- ロゴ -->
         <div class="logo">
-            <a href="index.html"><img src="./images/footer/rogo1.png" alt="ロゴ"></a>
-        <img src="./images/footer/rogo2.png" alt="簡易ロゴ">
+            <a href="index.html"  class="footer"><img src="./images/footer/rogo1.png" alt="ロゴ"></a>
+            <img src="./images/footer/rogo2.png" alt="簡易ロゴ">
         </div>
         <!-- コピーライト -->
         <div class="copyright">
-        <small>Copyright &copy; Taiyou/LINE</small>
+            <small>Copyright &copy; Taiyou/LINE</small>
         </div>
     </div>
 </footer>

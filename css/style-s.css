@@ -99,6 +99,7 @@ header {
   justify-content: space-around;
   padding: 0px 0px 0px 25px;
   text-align: end;
+  position: fixed;
   width: 100%;
   box-sizing: border-box;
 }
@@ -106,6 +107,10 @@ header {
 
 ul {
   list-style-type: none;
+}
+
+.sns {
+  padding: 0px 0px 0px 30px;
 }
 
 /*トップ画のCSS*/
@@ -123,6 +128,12 @@ h1 {
 .nav-item {
   margin-top: 5px;
   margin-bottom: 5px;
+}
+
+.nav-list:hover {
+  text-decoration-color: #FFF9EE;
+  color: #4F7153;
+  font-size: 1.2rem;
 }
 
 body header img {
@@ -158,6 +169,13 @@ h2 {
   color: #3A3D2B;
   font-size: 1.4rem;
   text-align: center;
+}
+
+.guide {
+  transition: .2s ease-in-out;
+  white-space: nowrap;
+  -webkit-border-radius: 50%;
+  border-radius: 35%
 }
 
 /* ハンバーガーメニュー */
@@ -312,9 +330,39 @@ body footer {
   line-height: 22px;
 }
 
+/* .modalClose {
+  /* ⑦ カーソル設定をします。（.send-button）というお問い合わせボタンで使用したクラスを反映しているので、その他のスタイルは自動的に反映される。
+  cursor: pointer;
+} */
+
 .modalClose {
   /* ⑦ カーソル設定をします。（.send-button）というお問い合わせボタンで使用したクラスを反映しているので、その他のスタイルは自動的に反映される。 */
   cursor: pointer;
+  display: inline-block;
+  line-height: 44px;
+  width: 44px;
+  height: 44px;
+  transition: .2s ease-in-out;
+  border-radius: 30%;
+}
+
+.modalClose:hover {
+  cursor: pointer;
+  background-color: #DDF1DF;
+  display: inline-block;
+  line-height: 44px;
+  width: 44px;
+  height: 44px;
+  transition: .2s ease-in-out;
+  border-radius: 30%;
+}
+
+.modalopen:hover {
+  cursor: pointer;
+  display: inline-block;
+  background-color: #DDF1DF;
+  transition: .2s ease-in-out;
+  border-radius: 20%;
 }
 
 .space {
@@ -397,11 +445,11 @@ body footer {
 }
 
 
-a:hover {
+/*a:hover {
   background: #6A8F68;
   border-radius: 35%;
-  /*transform: rotate(360deg);*/
-}
+  /*transform: rotate(360deg);
+}*/
 
 /* イラストオンリーCSS */
 .characteronly {
@@ -413,7 +461,7 @@ a:hover {
 /* トップCSS */
 .welcome {
   width: 80%;
-  padding: 20px 5px 10px 10px;
+  padding: 130px 5px 10px 10px;
 }
 
 
@@ -481,4 +529,47 @@ a:hover {
 .only_image {
   max-width: 100%;
   height: 360px;
+}
+
+/*hover調整*/
+.footer:hover {
+  display: inline-block;
+  background-color: #4C5C50;
+  transition: .2s ease-in-out;
+  border-radius: 10%;
+}
+
+.branchi:hover {
+  display: inline-block;
+  background-color: #5A9985;
+  transition: .2s ease-in-out;
+  border-radius: 10%;
+}
+
+.i-sns-twitter:hover {
+  display: inline-block;
+  background-color: #5A9985;
+  transition: .2s ease-in-out;
+  border-radius: 18%;
+}
+
+.i-sns-inst:hover {
+  display: inline-block;
+  background-color: #5A9985;
+  transition: .2s ease-in-out;
+  border-radius: 18%;
+}
+
+.i-sns-line:hover {
+  display: inline-block;
+  background-color: #5A9985;
+  transition: .2s ease-in-out;
+  border-radius: 18%;
+}
+
+.guide:hover {
+  display: inline-block;
+  background-color: #9ABCA4;
+  transition: .2s ease-in-out;
+  border-radius: 20%;
 }

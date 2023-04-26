@@ -50,6 +50,9 @@ header {
   box-sizing: border-box;
 }
 
+.sns {
+  padding: 8px;
+}
 
 ul {
   list-style-type: none;
@@ -240,6 +243,31 @@ body footer {
 .modalClose {
   /* ⑦ カーソル設定をします。（.send-button）というお問い合わせボタンで使用したクラスを反映しているので、その他のスタイルは自動的に反映される。 */
   cursor: pointer;
+  display: inline-block;
+  line-height: 44px;
+  width: 44px;
+  height: 44px;
+  transition: .2s ease-in-out;
+  border-radius: 30%;
+}
+
+.modalClose:hover {
+  cursor: pointer;
+  background-color: #DDF1DF;
+  display: inline-block;
+  line-height: 44px;
+  width: 44px;
+  height: 44px;
+  transition: .2s ease-in-out;
+  border-radius: 30%;
+}
+
+.modalopen:hover {
+  cursor: pointer;
+  display: inline-block;
+  background-color: #DDF1DF;
+  transition: .2s ease-in-out;
+  border-radius: 20%;
 }
 
 .space {
@@ -320,7 +348,7 @@ body footer {
 }
 
 
-a:hover {
+.pgnum:hover {
   background: #6A8F68;
   border-radius: 35%;
   /*transform: rotate(360deg);*/
@@ -409,4 +437,47 @@ a:hover {
   text-align: center;
   transition: .2s ease-in-out;
   border-radius: 35%
+}
+
+/*hover調整*/
+.footer:hover {
+  display: inline-block;
+  background-color: #4C5C50;
+  transition: .2s ease-in-out;
+  border-radius: 10%;
+}
+
+.branchi:hover {
+  display: inline-block;
+  background-color: #5A9985;
+  transition: .2s ease-in-out;
+  border-radius: 10%;
+}
+
+.i-sns-twitter:hover {
+  display: inline-block;
+  background-color: #5A9985;
+  transition: .2s ease-in-out;
+  border-radius: 18%;
+}
+
+.i-sns-inst:hover {
+  display: inline-block;
+  background-color: #5A9985;
+  transition: .2s ease-in-out;
+  border-radius: 18%;
+}
+
+.i-sns-line:hover {
+  display: inline-block;
+  background-color: #5A9985;
+  transition: .2s ease-in-out;
+  border-radius: 18%;
+}
+
+.guide:hover {
+  display: inline-block;
+  background-color: #9ABCA4;
+  transition: .2s ease-in-out;
+  border-radius: 20%;
 }
