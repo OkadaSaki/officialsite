@@ -328,7 +328,7 @@ body footer {
   width: 44px;
   height: 44px;
   margin: 0 6px 20px;
-  transition: .2s ease-in-out;
+  /*transition: .2s ease-in-out;*/
   white-space: nowrap;
   -webkit-border-radius: 50%;
   border-radius: 35%
@@ -338,9 +338,9 @@ body footer {
   font-size: 1.3rem;
   color: #666;
   transition: .2s ease-in-out;
-  line-height: 44px;
+  /*line-height: 44px;
   width: 40px;
-  height: 40px;
+  height: 40px;*/
   margin: 0 6px;
   white-space: nowrap;
   -webkit-border-radius: 50%;
@@ -351,7 +351,13 @@ body footer {
 .pgnum:hover {
   background: #6A8F68;
   border-radius: 35%;
-  /*transform: rotate(360deg);*/
+  transform: rotate(360deg);
+}
+
+.pgtext:hover {
+  background: #6A8F68;
+  transition: .2s ease-in-out;
+  border-radius: 20%;
 }
 
 /* イラストオンリーCSS */

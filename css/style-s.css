@@ -425,7 +425,7 @@ body footer {
   width: 35px;
   height: 35px;
   margin: 0 6px 9px;
-  transition: .2s ease-in-out;
+  /*transition: .2s ease-in-out;*/
   white-space: nowrap;
   -webkit-border-radius: 50%;
   border-radius: 28%;
@@ -435,15 +435,27 @@ body footer {
   font-size: 1.3rem;
   color: #666;
   transition: .2s ease-in-out;
-  line-height: 44px;
+  /*line-height: 44px;
   width: 40px;
-  height: 40px;
+  height: 40px;*/
   margin: 0 6px;
   white-space: nowrap;
   -webkit-border-radius: 50%;
   border-radius: 35%;
 }
 
+
+.pgnum:hover {
+  background: #6A8F68;
+  border-radius: 35%;
+  transform: rotate(360deg);
+}
+
+.pgtext:hover {
+  background: #6A8F68;
+  transition: .2s ease-in-out;
+  border-radius: 20%;
+}
 
 /*a:hover {
   background: #6A8F68;

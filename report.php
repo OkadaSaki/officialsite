@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Raleway:700,400">
   <title>食レポシリーズ</title>
-  <link rel="stylesheet" href="css/reset.css" type="text/css">
-  <link rel="stylesheet" href="css/style-l.css" media="screen and (min-width:769px)">
-  <link rel="stylesheet" href="css/style-s.css" media="screen and (max-width:768px)">
+  <link rel="stylesheet" href="http://doukipengin.starfree.jp/css/reset.css" type="text/css">
+  <link rel="stylesheet" href="http://doukipengin.starfree.jp/css/style-l.css" media="screen and (min-width:769px)">
+  <link rel="stylesheet" href="http://doukipengin.starfree.jp/css/style-s.css" media="screen and (max-width:768px)">
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="./js/sample.js"></script>
@@ -151,7 +151,7 @@
     <div class="footer-wrapper">
         <!-- ロゴ -->
         <div class="logo">
-            <a href="index.html"  class="footer"><img src="./images/footer/rogo1.png" alt="ロゴ"></a>
+            <a href="http://doukipengin.starfree.jp/index.html"  class="footer"><img src="./images/footer/rogo1.png" alt="ロゴ"></a>
             <img src="./images/footer/rogo2.png" alt="簡易ロゴ">
         </div>
         <!-- コピーライト -->
